@@ -1,0 +1,20 @@
+<resources>
+        <string name="app_name">cvbuilder</string>
+        <string name="hint_roll_number">Roll Number</string>
+        <string name="hint_name">Name</string>
+        <string name="hint_cgpa">CGPA</string>
+        <string name="hint_degree">Select Degree</string>
+        <string name="radio_male">Male</string>
+        <string name="radio_female">Female</string>
+        <string name="radio_other">Other</string>
+        <string name="text_academia">Academia</string>
+        <string name="text_industry">Industry</string>
+        <string name="text_business">Business</string>
+        <string name="btn_save">Save</string>
+        <string-array name="degree_options">
+                <item>Bachelors</item>
+                <item>Masters</item>
+                <item>PHD</item>
+        </string-array>
+
+</resources>

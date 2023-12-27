@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Roll Number - TEXT -->
+            <EditText
+                android:id="@+id/rollNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:hint="@string/hint_roll_number"
+                android:inputType="text"
+                android:translationY="20dp" />
+
+            <!-- Name - TEXT -->
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:hint="@string/hint_name"
+                android:inputType="text" />
+
+            <!-- CGPA - REAL NUMBER -->
+            <EditText
+                android:id="@+id/cgpaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/hint_cgpa"
+                android:inputType="numberDecimal" />
+
+            <!-- Degree - DROPDOWN (Spinner) -->
+            <Spinner
+                android:id="@+id/degreeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:prompt="@string/hint_degree">
+            <!-- You can populate this with your degree options -->
+            </Spinner>
+
+            <!-- Gender - RADIO BUTTON -->
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_male" />
+
+                <RadioButton
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_female" />
+
+                <RadioButton
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_other" />
+            </RadioGroup>
+
+        <!-- Date of Birth - DATE PICKER -->
+        <DatePicker
+            android:id="@+id/dateOfBirthPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Career Interest - CHECK BOX -->
+        <CheckBox
+            android:id="@+id/academiaCheckBox"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Academia" />
+
+        <CheckBox
+            android:id="@+id/industryCheckBox"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:text="Industry" />
+
+        <CheckBox
+            android:id="@+id/businessCheckBox"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="Business" />
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:translationX="150dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cvRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/scrollView" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
